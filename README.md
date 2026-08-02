@@ -45,6 +45,23 @@ The script re-attaches its listeners whenever the active video changes,
 using YouTube's `yt-navigate-finish` event plus a lightweight polling
 interval as a safety net for single-page-app navigation.
 
+## Development
+
+There is no compile step — the extension is plain JavaScript. A `Makefile`
+wraps the common tasks:
+
+```sh
+make check       # validate manifest.json and JS syntax
+make package     # build dist/auto-play-youtube-shorts-v<version>.zip
+make icons       # regenerate icons/ from scripts/gen_icons.py
+make screenshot  # render the 1280x800 store screenshot (needs Chrome, macOS path)
+make release     # tag v<version> and publish a GitHub release with the zip
+make clean       # remove dist/
+```
+
+The version is read from `manifest.json`, so bumping it there is enough for
+`make package` and `make release` to pick it up.
+
 ## Disclaimer
 
 This project is an independent, unofficial browser extension and is **not
