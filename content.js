@@ -1,4 +1,4 @@
-// Auto Play YouTube Shorts - content script
+// Auto Play for YouTube Shorts - content script
 // Watches the active YouTube Short's <video> element and advances to the
 // next Short once playback completes (detected via loop-wraparound or the
 // native "ended" event).

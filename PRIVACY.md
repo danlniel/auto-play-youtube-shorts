@@ -1,4 +1,4 @@
-# Privacy Policy — Auto Play YouTube Shorts
+# Privacy Policy — Auto Play for YouTube Shorts
 
 _Last updated: August 2, 2026_
 

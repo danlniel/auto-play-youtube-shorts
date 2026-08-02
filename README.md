@@ -1,4 +1,4 @@
-# Auto Play YouTube Shorts
+# Auto Play for YouTube Shorts
 
 A tiny Chrome extension that automatically advances to the next YouTube Short
 once the current one finishes playing.

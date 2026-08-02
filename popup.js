@@ -1,4 +1,4 @@
-// Auto Play YouTube Shorts - popup script
+// Auto Play for YouTube Shorts - popup script
 // Syncs the toggle switch with the `enabled` flag in chrome.storage.sync.
 (function () {
   "use strict";
