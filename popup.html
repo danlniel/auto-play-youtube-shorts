@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Auto Play YouTube Shorts</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+        width: 220px;
+        background: #181818;
+        color: #f1f1f1;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      }
+
+      .container {
+        padding: 14px 16px;
+      }
+
+      h1 {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0 0 12px;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .row span {
+        font-size: 12.5px;
+        color: #d6d6d6;
+      }
+
+      /* Toggle switch */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 38px;
+        height: 20px;
+        flex-shrink: 0;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        inset: 0;
+        background-color: #3a3a3a;
+        transition: 0.2s;
+        border-radius: 20px;
+      }
+
+      .slider::before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: #f1f1f1;
+        transition: 0.2s;
+        border-radius: 50%;
+      }
+
+      input:checked + .slider {
+        background-color: #cc0000;
+      }
+
+      input:checked + .slider::before {
+        transform: translateX(18px);
+      }
+
+      .footer {
+        margin-top: 10px;
+        font-size: 10.5px;
+        color: #7a7a7a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Auto Play YouTube Shorts</h1>
+      <div class="row">
+        <span>Auto-advance Shorts</span>
+        <label class="switch">
+          <input type="checkbox" id="enabled-toggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="footer">Advances automatically when a Short finishes.</div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
